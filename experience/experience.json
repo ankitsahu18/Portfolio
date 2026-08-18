@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "company": "CyberSec Solutions Pvt. Ltd.",
+    "role": "Cyber Security Intern",
+    "duration": "June 2024 - August 2024",
+    "type": "internship",
+    "description": "Assisted in performing vulnerability assessments and security audits for client web applications, and helped document findings in remediation reports."
+  },
+  {
+    "id": 2,
+    "company": "TechGuard Labs",
+    "role": "Ethical Hacking Trainee",
+    "duration": "January 2024 - May 2024",
+    "type": "training",
+    "description": "Completed hands-on training in penetration testing methodology, network scanning, and exploitation techniques using industry-standard tools like Nmap, Burp Suite, and Metasploit."
+  },
+  {
+    "id": 3,
+    "company": "Freelance",
+    "role": "Vulnerability Assessment & Penetration Tester",
+    "duration": "August 2023 - December 2023",
+    "type": "freelance",
+    "description": "Conducted independent VAPT engagements for small businesses, identifying and reporting security flaws in web applications and network infrastructure."
+  }
+]
