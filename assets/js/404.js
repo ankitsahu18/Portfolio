@@ -1,26 +1,17 @@
-$(document).ready(function(){
+// Hamburger menu toggle (in case the navbar links are used elsewhere on the site)
+const menuBtn = document.querySelector('#menu');
+const navbar = document.querySelector('.navbar');
 
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
-});
-
-// disable developer mode
-document.onkeydown = function(e) {
-  if(e.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
+if (menuBtn && navbar) {
+  menuBtn.onclick = () => {
+    menuBtn.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+  };
 }
+
+window.onscroll = () => {
+  if (menuBtn && navbar) {
+    menuBtn.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+  }
+};
